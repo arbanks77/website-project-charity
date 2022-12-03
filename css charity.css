@@ -1,22 +1,60 @@
 * {
-    background-color: whitesmoke;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(239, 227, 218, 0.914);
+}
+
+.container {
+    position: absolute;
+    margin: 20px;
+    width: auto;
+}
+
+header a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: rgb(40, 179, 75);
+    font-size: 20px;
+    font-weight: bold;
 }
 
 img#Logo {
-    display:inline-block;
+    display: incline-block;
     position: fixed;
+    top: 0;
+    right: 0;
     height: 100px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     padding: 0 px;
 }
 
-nav{
-    float: right;
-    display: inline-flex;
-    justify-content: flex-end;
-    font-size: 30px;
-    text-align: center;
-    margin-bottom: 15px;
+nav a{
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(66, 69, 67);
+    width: 20%; 
+    padding: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    background-color: rgb(4, 6, 4);
+    color: white;
+    margin: 5px 0;
+    border-radius:5px;
+    transition: 0.2 all ease-in-out;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a:hover {
+    opacity: 1;
+    letter-spacing: 10px;
+    font-weight: bold;
+    color: rgb(102, 47, 15);
+}
+
+nav a:visited{
+    color:rgba(239, 227, 218, 0.914); 
 }
 
 h1#header1{
@@ -51,7 +89,7 @@ p.textp{
     font-size: 20px;
     text-align: center;}
 
-img#zebrasphoto {
+    img#zebrasphoto {
     background-size: 100%;
     height: 600px;
     width: 600px;
@@ -78,16 +116,166 @@ h2{
 }
 
 div#joinusbutton{
-    margin: 10px 0px 0px 30px;
+    margin: 30px 0px 60px 0px;
     padding: 0px;
     align-items: center;
     text-align: center;
+    color: rgb(102, 47, 15);
+    
+}
+.page-wrapper {
+    min-height: 100;
+}
+
+input#submit2{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: bold;
+  background-color: #8ab042;
+  color: #fff;
+  border-radius: 5px;
+  width: 114px;
+  height: 37px;
+  border:rgb(40, 179, 75);
+}
+
+input#submit2:active {
+    background-color: #fff;
+    border: 5px solid #427bb8;
+    color: #427bb8;
+  }
+
+a {
+    color: rgb(102, 47, 15)
+}
+
+div a:visited {
+    color: #cc851c;
+}
+
+/*donation page*/
+
+div.contact-info{
+font-size: 18px;
+}
+div#linky{
+    margin-top: 30px;
+}
+button.back {
+    color: #cc851c;
+  }
+
+button.next {
+   color: #f4f6f1;
+  }
+input#submit2 :visited {
+    background-color: #427bb8;
+    color: white;
+    border: 5px solid #427bb8;
+}
+div.donate{
+    margin: 15px 0px 14px;
+    padding: 18px 0px 10px;
+    font-family: 'Roboto Condensed', sans-serif;
+    border-right: 1px dotted #2a4f76;
+    font-size: 18px;
+  }
+
+  .btn-blue-other,
+  .btn-blue {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    background-color: #427bb8;
+    color: #fff;
+    border-radius: 5px;
+    border: 0;
+    padding: 0;
+    width: 75px;
+    height: 37px;
+    margin-top: 8px;
+  }
+
+  button {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    background-color: #8ab042;
+    color: #fff;
+    border-radius: 5px;
+    border: 0;
+    padding: 0;
+    width: 114px;
+    height: 37px;
+    margin-top: 8px;
+  }
+  
+  nav>li>a:hover, nav>li>a:focus {
+    text-decoration: none;
+    background-color: transparent;
+  }
+
+  button:active {
+    background-color: #fff;
+    border: 5px solid #427bb8;
+    color: #427bb8;
+  }
+
+  button#btn1:focus {
+  outline: -webkit-focus-ring-color auto 0px;
+  }
+
+  button li:last-child {
+    font-size: 17px;
+    line-height: 37px;
+    padding-left: 20px;
+    padding-top: 15px;
+  }
+
+/* Footer */
+container { 
+    background-color: black;
+    margin-top:500px;
 }
 
 footer{
-    margin-top: 45px;
+    background: black;
+    height: auto;
+    width: 97vw;
+    padding: 25px;
+    color: white;
 }
 
-//* this is the width of webpage I was going off of-
+div.footer-content{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background: black;
+    color: rgb(234, 220, 220);
+    margin: 35px;
+}
+
+div.footer-bottom{
+    background: rgb(7, 8, 7);
+    width: 100vw;
+    align-items: center;
+    color: white;
+}
+
+div.footer-bottom p{
+    font-size: 16px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+    display: flex;
+    background:rgb(8, 8, 9);
+    text-align: center;
+}
+
+div.footer-bottom em{
+   background: black; 
+}
+
+
+/* this is the width of webpage I was going off of-
     width: 4750px;
-*//
+*/
